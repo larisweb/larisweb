@@ -1,17 +1,5 @@
-# OS
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# IDE
-.vscode/
-.idea/
-
-# Claude
-.claude/
-
-# Node (npx serve)
-node_modules/
-
-# Design reference (pas livré)
-design-reference/
+# Tout ignorer sauf public/
+*
+!public/
+!public/**
+!.gitignore

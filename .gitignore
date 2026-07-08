@@ -1,5 +1,5 @@
-# Tout ignorer sauf public/
+# Tout ignorer sauf docs/
 *
-!public/
-!public/**
+!docs/
+!docs/**
 !.gitignore

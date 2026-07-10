@@ -836,13 +836,22 @@ main > section { scroll-margin-top: calc(var(--header-h) + var(--sp-4)); }
 .demo-card__visual--blanc > * { position: relative; z-index: 1; }
 .demo-card__visual--blanc .demo-card__details em { color: var(--paper); }
 
-.demo-card__visual--perrec {
-  background: #e8e9e4;
-  color: var(--ink);
+.demo-card__visual--fontaine {
+  background: url('../demos/lea-fontaine/assets/hero.webp') center/cover no-repeat;
+  color: var(--paper);
+  position: relative;
 }
-.demo-card__visual--perrec .demo-card__badge {
-  background: var(--ink);
-  color: var(--bg);
+.demo-card__visual--fontaine::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(10,10,10,0.8) 0%, rgba(10,10,10,0.5) 100%);
+  z-index: 0;
+}
+.demo-card__visual--fontaine > * { position: relative; z-index: 1; }
+.demo-card__visual--fontaine .demo-card__badge {
+  background: rgba(0,0,0,0.4);
+  color: var(--paper);
 }
 
 .demo-card__circle {
@@ -894,7 +903,8 @@ main > section { scroll-margin-top: calc(var(--header-h) + var(--sp-4)); }
 }
 .demo-card__hero-text em { color: inherit; }
 .demo-card__visual--blanc .demo-card__hero-text em { color: var(--paper); }
-.demo-card__visual--perrec .demo-card__hero-text em { color: var(--accent); }
+.demo-card__visual--fontaine .demo-card__hero-text em { color: var(--paper); }
+.demo-card__visual--fontaine .demo-card__details em { color: var(--paper); }
 
 .demo-card__details {
   display: flex;
